@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <!--deklarasi penggunaan javascript-->
+  <script>
+  // deklarasi fungsi bernama test
+    function test(){
+      // deklarasi variabel bernama val1
+      var val1=document.kirim. T1. value
+      //seleksi variabel var1
+      if (val1%2==0)
+        document.kirim.T2. value="bilangan genap" //output : "bilangan genap"
+
+      else
+        document.kirim.T2. value="bilangan ganjil" //output : "bilangan ganjil"
+
+    }
+  </script>
+
+  <body>
+    <!--deklarasi form bernama kirim-->
+    <form method="post" name="kirim">
+      <!--deklarasi input teks-->
+      <p>BIL <input type="text" name="T1" size="20"> MERUPAKAN BIL <input type="text" name="T2" value=""></p>
+
+      <!--pemanggilan function javascript melalui button-->
+      <p><input type="button" value="TEBAK" name="B1" onclick=test()></p>
+    </form>
+  </body>
+</html>

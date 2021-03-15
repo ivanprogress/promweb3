@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <!--deklarasi penggunaan javascript-->
+  <script>
+  // deklarasi fungsi bernama test
+    function test(){
+      // deklarasi variabel bernama val1 input dari windows prompt
+      val1=window.prompt("Input Nilai (1-5): ")
+
+
+      //deklarasi switch
+      switch (val1)
+    {
+    case "1":
+      document.write("bilangan satu") //dokumen menulis "bilangan satu"
+      break;
+    case "2":
+      document.write("bilangan dua") //dokumen menulis "bilangan dua"
+      break;
+    case "3":
+      document.write("bilangan tiga") //dokumen menulis "bilangan tiga"
+      break;
+    case "4":
+      document.write("bilangan empat") //dokumen menulis "bilangan empat"
+      break;
+    case "5":
+      document.write("bilangan lima") //dokumen menulis "bilangan lima"
+      break;
+    default :
+      document.write("bilangan lainnya") //dokumen menulis "bilangan lainnya"
+    }
+  }
+  </script>
+
+  <body>
+    <!--pemanggilan function javascript melalui button-->
+    <input type="button"  name="button2" value="switch" onclick=test()>
+  </body>
+</html>
